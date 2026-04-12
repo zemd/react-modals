@@ -1,0 +1,67 @@
+{
+  "name": "@zemd/react-modals",
+  "version": "0.0.0",
+  "description": "A lightweight React modal management library.",
+  "license": "Apache-2.0",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "author": {
+    "name": "Dmytro Zelenetskyi",
+    "email": "dmytro.zelenetskyi@gmail.com",
+    "url": "https://zemd.dev"
+  },
+  "homepage": "https://github.com/zemd/react-modals",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zemd/react-modals.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zemd/react-modals/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsdown --minify",
+    "changeset": "changeset",
+    "dev": "tsdown --watch",
+    "format": "prettier --write . --ignore-unknown",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "prepare": "husky",
+    "release": "changeset publish"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "modals",
+    "library"
+  ],
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=19",
+    "react-dom": ">=19"
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.30.0",
+    "@types/node": "^25.6.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@zemd/eslint-react": "3.0.3",
+    "@zemd/tsconfig": "1.6.0",
+    "eslint": "10.2.0",
+    "husky": "9.1.7",
+    "prettier": "3.8.2",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "tsdown": "0.21.7",
+    "typescript": "6.0.2"
+  },
+  "workspaces": [
+    "examples/*"
+  ]
+}
