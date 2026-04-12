@@ -24,6 +24,7 @@
     "url": "https://github.com/zemd/react-modals/issues"
   },
   "type": "module",
+  "module": "./dist/index.mjs",
   "scripts": {
     "build": "tsdown --minify",
     "changeset": "changeset",
@@ -60,8 +61,5 @@
     "react-dom": "19.2.5",
     "tsdown": "0.21.7",
     "typescript": "6.0.2"
-  },
-  "workspaces": [
-    "examples/*"
-  ]
+  }
 }
