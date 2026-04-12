@@ -18,7 +18,7 @@
   "homepage": "https://github.com/zemd/react-modals",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zemd/react-modals.git"
+    "url": "git+https://github.com/zemd/react-modals.git"
   },
   "bugs": {
     "url": "https://github.com/zemd/react-modals/issues"
@@ -61,5 +61,8 @@
     "react-dom": "19.2.5",
     "tsdown": "0.21.7",
     "typescript": "6.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
