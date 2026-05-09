@@ -1,4 +1,4 @@
-import { createContext, use } from "react";
+import { createContext, use, type Context } from "react";
 import type { Entry } from "./types";
 
 export type ModalEntryContextType = {
@@ -6,9 +6,8 @@ export type ModalEntryContextType = {
   close: () => void;
 };
 
-export const ModalEntryContext = createContext<ModalEntryContextType | null>(
-  null,
-);
+export const ModalEntryContext: Context<ModalEntryContextType | null> =
+  createContext<ModalEntryContextType | null>(null);
 
 export const useModalContext = (): ModalEntryContextType => {
   const context = use(ModalEntryContext);

@@ -93,4 +93,4 @@ export const createStore = (options?: StoreOptions): Store => {
   };
 };
 
-export const store = createStore();
+export const store: Store = createStore();
